@@ -7,49 +7,58 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #0f0f0f; /* Sleek dark background */
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
             margin: 0;
+            color: white;
         }
 
         h1 {
-            margin-bottom: 30px;
-            color: #333;
+            font-size: 3rem; /* Extra large header */
+            font-weight: 800;
+            margin-bottom: 40px;
+            text-align: center;
+            letter-spacing: -1px;
+            text-transform: uppercase;
         }
 
         .button-container {
             width: 100%;
-            max-width: 400px;
+            max-width: 450px;
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
         }
 
         .btn {
             display: block;
-            background-color: #ffffff;
-            color: #333;
+            background-color: #1e1e1e;
+            color: white;
             text-decoration: none;
             text-align: center;
-            padding: 15px;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid #333;
+            text-transform: uppercase;
         }
 
+        /* Hover/Tap Effects */
         .btn:active {
-            transform: scale(0.98);
+            transform: scale(0.96);
+            background-color: #282828;
         }
 
-        /* Customize individual button colors here if you want */
-        .instagram { border-left: 5px solid #E1306C; }
-        .twitter { border-left: 5px solid #1DA1F2; }
-        .github { border-left: 5px solid #333; }
+        /* Accent Colors for your specific links */
+        .menu { border-bottom: 4px solid #f1c40f; } /* Gold */
+        .telegram { border-bottom: 4px solid #0088cc; } /* Telegram Blue */
+        .threema { border-bottom: 4px solid #00ff00; } /* Threema Green */
 
     </style>
 </head>
@@ -58,9 +67,11 @@
     <h1>JefesNetwork</h1>
 
     <div class="button-container">
-        <a href="#" class="btn instagram">Instagram</a>
-        <a href="#" class="btn twitter">Twitter</a>
-        <a href="#" class="btn github">GitHub</a>
+        <a href="https://rentry.org/jefesnetwork" class="btn menu">MENÜ & INFOS</a>
+        
+        <a href="https://t.me/jefesnetzwerkinfo" class="btn telegram">TELEGRAM GATEWAY</a>
+        
+        <a href="https://threema.id/835S56U3" class="btn threema">THREEMA</a>
     </div>
 
 </body>
